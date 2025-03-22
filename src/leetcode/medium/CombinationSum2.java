@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/* Wrong solution -- knapsack doesnot work for duplicates*/
 public class CombinationSum2 {
 
 	public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class CombinationSum2 {
 		CombinationSum2 obj=new CombinationSum2();
 		System.out.println(obj.combinationSum2(candidates, target));
 	}
-
+	/* Wrong solution -- knapsack doesnot work for duplicates*/
 	 public List<List<Integer>> combinationSum2(int[] candidates, int target) {
 		 List<List<Integer>> list=new ArrayList<>();
 		 Arrays.sort(candidates);
@@ -21,7 +22,7 @@ public class CombinationSum2 {
 		// System.out.println(list);
 		 return list;
 	    }
-
+	/* Wrong solution -- knapsack doesnot work for duplicates*/
 		public int knapSackProblem(int[] wt,int N,int weight,List<List<Integer>> targetList,List<Integer> list,int prev)
 		{
 			List<Integer> newList=(list==null)?new ArrayList():list;
