@@ -34,7 +34,7 @@ public class MedianTwoSortedArray {
 
 		        if(out.length%2==0)
 		        {
-		            return (out[size/2-1]+out[size/2])/2.0d;
+		            return (out[(size/2)-1]+out[size/2])/2.0d;
 		        }
 		        else
 		        {
