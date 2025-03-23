@@ -1,5 +1,7 @@
 package src.leetcode.medium;
 
+import src.leetcode.common.ListNode;
+
 public class Problem19_RemoveNthFromEndOfList {
     public static void main(String args[]) {
         ListNode list = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));

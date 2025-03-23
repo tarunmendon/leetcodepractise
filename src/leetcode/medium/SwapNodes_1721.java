@@ -1,5 +1,7 @@
 package src.leetcode.medium;
 
+import src.leetcode.common.ListNode;
+
 import java.util.List;
 
 public class SwapNodes_1721 {

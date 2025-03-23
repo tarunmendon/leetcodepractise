@@ -7,6 +7,10 @@ public class ListNode {
     public ListNode(int val) { this.val = val; }
     public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 
+    public String printListNode(ListNode head)
+    {
+        return printList(head);
+    }
     public String printList(ListNode head)
     {
         ListNode node=head;
