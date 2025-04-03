@@ -3,10 +3,10 @@ package src.leetcode.medium;
 public class SearchRotatedSortedArr {
 
     public static void main(String args[]) {
-        int[] nums = new int[]{7, 8, 9, 10, 11, 1, 2, 3};
+        int[] nums = new int[]{1, 2, 3,7, 8, 9, 10, 11};
         SearchRotatedSortedArr obj = new SearchRotatedSortedArr();
 
-        //System.out.println(obj.findPivot(nums));
+        System.out.println(obj.findPivot(nums));
         System.out.println(obj.findPivot1(nums));
         System.out.println(obj.search(nums, 3));
     }
@@ -81,10 +81,15 @@ public class SearchRotatedSortedArr {
             if (nums[midPoint] > nums[midPoint + 1]) {
                 return midPoint + 1;
             }
-            if (nums[left] <= nums[midPoint])
+            if (nums[left] <= nums[midPoint]) {
+                /*This means that left is sorted
+                Look into the riht side
+                 */
                 left = midPoint + 1;
-            else
+            }
+            else {
                 right = midPoint - 1;
+            }
 
         }
         return left;
